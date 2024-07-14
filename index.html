@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro Loading Screen</title>
+  </head>
+  <body>
+    <div id="loadingContainer"> <!-- created loading containier related all loading page -->
+      <!-- <div id="loadingScreenPercent"></div> added loadingScreenPercent into loading container -->
+      <div class="progress-container">
+        <svg class="progress-ring" width="120" height="120">
+          <circle class="progress-circle" cx="60" cy="60" r="50"></circle>
+          <circle class="progress-circle-fill" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="progress-text">0%</div>
+      </div>      
+      <div id="load">
+        <div>G</div>
+        <div>N</div>
+        <div>I</div>
+        <div>D</div>
+        <div>A</div>
+        <div>O</div>
+        <div>L</div>  
+      </div>
+      <img src="assets/metariom-logo-4.png" alt="metariom-logo" class="logo">
+      <footer>
+        <p>Powered by <a href="https://metariom.com" target="_blank">Metariom</a></p>
+    </footer>
+  </div>
+    <canvas id="renderCanvas"></canvas>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
